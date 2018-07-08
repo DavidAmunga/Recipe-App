@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-const API_KEY = "e79743444a86e4dab300359a468862af";
+import { Link } from "react-router-dom";
 
-import {  Link} from 'react-router-dom'
+const API_KEY = "e79743444a86e4dab300359a468862af";
 
 class Recipe extends Component {
   state = {
@@ -42,8 +42,9 @@ class Recipe extends Component {
               </span>
             </p>
             <button className="active-recipe__button">
-            <Link to='/'/>
-            Go Home</button>
+              <Link to="/">Go Home</Link>
+              
+            </button>
           </div>
         )}
       </div>
